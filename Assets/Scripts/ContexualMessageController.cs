@@ -15,7 +15,7 @@ public class ContexualMessageController : MonoBehaviour
 
         canvasGroup.alpha = 0;
 
-        StartCoroutine(ShowMessage("Testing", 2));
+       
 
     }
 
