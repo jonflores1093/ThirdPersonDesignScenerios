@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
-public class ContexualMessageController : MonoBehaviour
+public class ContextualMessageController : MonoBehaviour
 {
     private CanvasGroup canvasGroup;
     private TMP_Text messageText;
@@ -15,7 +15,7 @@ public class ContexualMessageController : MonoBehaviour
 
         canvasGroup.alpha = 0;
 
-       
+
 
     }
 
@@ -29,7 +29,20 @@ public class ContexualMessageController : MonoBehaviour
 
     }
 
+    private void OnContextualMessageTriggered()
+    {
 
+        StartCoroutine(ShowMessage("Testing", 2));
 
+    }
 
+    private void OnEnable()
+    {
+        ContextualMessageTrigger.ContextualMessageTriggered += OnContextualMessageTriggered;
+    }
+
+    private void OnDisable()
+    {
+        ContextualMessageTrigger.ContextualMessageTriggered -= OnContextualMessageTriggered;
+    }
 }
