@@ -29,10 +29,10 @@ public class ContextualMessageController : MonoBehaviour
 
     }
 
-    private void OnContextualMessageTriggered()
+    private void OnContextualMessageTriggered(string message, float messageDuration)
     {
 
-        StartCoroutine(ShowMessage("Testing", 2));
+        StartCoroutine(ShowMessage(message, messageDuration));
 
     }
 
