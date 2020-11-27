@@ -187,7 +187,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48670953}
-  m_LocalRotation: {x: -0.20995003, y: -0.13878177, z: 0.030120822, w: -0.96734345}
+  m_LocalRotation: {x: -0.20995006, y: -0.13878182, z: 0.030120835, w: -0.96734345}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -261,7 +261,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70876344}
-  m_LocalRotation: {x: -0.17467274, y: -0.13978441, z: 0.025059946, w: -0.9743315}
+  m_LocalRotation: {x: -0.17467274, y: -0.13978437, z: 0.025059938, w: -0.9743315}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -808,7 +808,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336526338}
-  m_LocalRotation: {x: -0.1923198, y: -0.13930672, z: 0.027591564, w: -0.97100234}
+  m_LocalRotation: {x: -0.19231981, y: -0.13930677, z: 0.027591573, w: -0.97100234}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2297,7 +2297,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840146140}
-  m_LocalRotation: {x: 0.19231983, y: 0.13930671, z: -0.027591534, w: 0.97100234}
+  m_LocalRotation: {x: 0.19231983, y: 0.1393068, z: -0.027591549, w: 0.97100234}
   m_LocalPosition: {x: 8.154791, y: 6.61, z: -20.711807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2842,6 +2842,7 @@ GameObject:
   - component: {fileID: 883560622}
   - component: {fileID: 883560628}
   - component: {fileID: 883560627}
+  - component: {fileID: 883560629}
   m_Layer: 0
   m_Name: Portcullis Door
   m_TagString: Untagged
@@ -4011,6 +4012,25 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!95 &883560629
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883560621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 88a149031ecd3cd4f839bf20e9b4ec05, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &911276065
 GameObject:
   m_ObjectHideFlags: 0
