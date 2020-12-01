@@ -2,40 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnManager : MonoBehaviour
+public class SpawnManager : MonoSingleton<SpawnManager>
 {
-    private static SpawnManager _instance;
-    public static SpawnManager Instance
-    {
+    private float repeatRate = 1.0f;
+    
 
-        get
+    [SerializeField]
+    private GameObject _sphere;
+
+    [SerializeField]
+     
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
         {
+            InvokeRepeating("RandObj", 0.5f, repeatRate);
+            Destroy(gameObject, 11);
+            gameObject.GetComponent<BoxCollider>().enabled = false;
 
-            if (_instance == null)
-                Debug.LogError("Spawn Manager is NULL");
-            return _instance;
+
         }
+        
 
     }
 
-
-    private void Awake()
-    {
-        _instance = this;
-    }
-
-    public void StartSpawning()
+    void RandObj()
     {
 
-        Debug.Log("Spawn Started");
-
-
-    }
-
-    private void Start()
-    {
-
-        Debug.Log(PlayerScript.Instance.name);
+        Instantiate(_sphere);
 
     }
 
