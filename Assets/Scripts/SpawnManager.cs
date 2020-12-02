@@ -5,22 +5,30 @@ using UnityEngine;
 public class SpawnManager : MonoSingleton<SpawnManager>
 {
     private float repeatRate = 1.0f;
-    
+    Vector3 spawner = GameObject.FindGameObjectWithTag("Spawn").transform.position;
 
     [SerializeField]
     private GameObject _sphere;
 
-    [SerializeField]
-     
+    
+
+
+
+    public void Spawn()
+    {
+
+        Instantiate(_sphere, new Vector3(spawner.x,spawner.y, spawner.z), Quaternion.identity);
+
+
+    }
+
 
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            InvokeRepeating("RandObj", 0.5f, repeatRate);
-            Destroy(gameObject, 11);
-            gameObject.GetComponent<BoxCollider>().enabled = false;
+            Spawn();
 
 
         }
@@ -28,11 +36,6 @@ public class SpawnManager : MonoSingleton<SpawnManager>
 
     }
 
-    void RandObj()
-    {
-
-        Instantiate(_sphere);
-
-    }
+  
 
 }
