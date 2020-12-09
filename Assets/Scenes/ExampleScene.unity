@@ -1103,6 +1103,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488114589}
   m_Mesh: {fileID: 773001335}
+--- !u!1 &553469688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a1cc03af18a73040a924b396d99d5f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108605668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &553469690
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553469688}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c1fe3cfb42b00a540a9ec9450aa5bfe4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &649896721
 Mesh:
   m_ObjectHideFlags: 0
@@ -1344,7 +1369,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661756668}
-  m_LocalRotation: {x: 0.30352393, y: 0.123232335, z: -0.039623257, w: 0.94399}
+  m_LocalRotation: {x: 0.30352396, y: 0.123232394, z: -0.039623283, w: 0.94399}
   m_LocalPosition: {x: 8.837616, y: 8.324263, z: -18.141052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2360,7 +2385,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897157983}
-  m_LocalRotation: {x: -0.29664725, y: -0.12351739, z: 0.038725596, w: -0.9461735}
+  m_LocalRotation: {x: -0.29664725, y: -0.12351742, z: 0.038725607, w: -0.9461735}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5039,7 +5064,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588512041}
-  m_LocalRotation: {x: -0.3138086, y: -0.1227925, z: 0.04096577, w: -0.9406211}
+  m_LocalRotation: {x: -0.31380862, y: -0.12279253, z: 0.040965784, w: -0.9406211}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6016,7 +6041,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739873549}
-  m_LocalRotation: {x: -0.27943346, y: -0.124199666, z: 0.036478586, w: -0.9513994}
+  m_LocalRotation: {x: -0.27943346, y: -0.12419963, z: 0.036478575, w: -0.9513994}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7983,7 +8008,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3a1cc03af18a73040a924b396d99d5f9,
         type: 3}
       propertyPath: m_Name
-      value: skeletonzombie_t_avelange
+      value: ZombieModel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a1cc03af18a73040a924b396d99d5f9, type: 3}
